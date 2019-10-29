@@ -1,14 +1,14 @@
 <?php
     // 產生B2C測標資料
-    require('ECPay.Logistics.Integration.php');
+    require('Ecpay.Logistic.Integration.php');
     try {
-        $AL = new ECPayLogistics();
+        $AL = new EcpayLogistics();
         $AL->HashKey = '5294y06JbISpM5x9';
         $AL->HashIV = 'v77hoKGq4kWxNNIS';
         $AL->Send = array(
             'MerchantID' => '2000132',
             'ClientReplyURL' => '',
-            'LogisticsSubType' => LogisticsSubType::FAMILY,
+            'LogisticsSubType' => EcpayLogisticsSubType::FAMILY,
             'PlatformID' => ''
         );
 

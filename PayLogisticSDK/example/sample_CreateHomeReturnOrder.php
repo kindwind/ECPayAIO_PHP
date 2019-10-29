@@ -1,15 +1,15 @@
 ﻿<?php
     // 宅配逆物流訂單建立
     define('HOME_URL', 'http://www.sample.com.tw/logistics_dev');
-    require('ECPay.Logistics.Integration.php');
+    require('Ecpay.Logistic.Integration.php');
     try {
-        $AL = new ECPayLogistics();
+        $AL = new EcpayLogistics();
         $AL->HashKey = '5294y06JbISpM5x9';
         $AL->HashIV = 'v77hoKGq4kWxNNIS';
         $AL->Send = array(
             'MerchantID' => '2000132',
             'AllPayLogisticsID' => '15609',
-			"LogisticsSubType" => LogisticsSubType::TCAT,
+			"LogisticsSubType" => EcpayLogisticsSubType::TCAT,
             'SenderName' => '測試寄件者',
             'SenderPhone' => '0226550115',
             'SenderCellPhone' => '0933222111',

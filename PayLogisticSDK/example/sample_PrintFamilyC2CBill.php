@@ -1,8 +1,8 @@
 ﻿<?php
     // 全家列印小白單(全家超商C2C)
-    require('ECPay.Logistics.Integration.php');
+    require('Ecpay.Logistic.Integration.php');
     try {
-        $AL = new ECPayLogistics();
+        $AL = new EcpayLogistics();
         $AL->HashKey = 'XBERn1YOvpM9nfZc';
         $AL->HashIV = 'h1ONHk4P4yqbl5LK';
         $AL->Send = array(

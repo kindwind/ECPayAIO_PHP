@@ -1,10 +1,9 @@
-<?php
-    // 超商取貨逆物流訂單(統一超商B2C)
+﻿<?php
+    // 超商取貨逆物流訂單(全家超商B2C)
     define('HOME_URL', 'http://www.sample.com.tw/logistics_dev');
-    
-    require('ECPay.Logistics.Integration.php');
+    require('Ecpay.Logistic.Integration.php');
     try {
-        $AL = new ECPayLogistics();
+        $AL = new EcpayLogistics();
         $AL->HashKey = '5294y06JbISpM5x9';
         $AL->HashIV = 'v77hoKGq4kWxNNIS';
         $AL->Send = array(
@@ -20,8 +19,8 @@
             'Cost' => '100#700',
             'PlatformID' => '',
         );
-        // CreateUnimartB2CReturnOrder()
-        $Result = $AL->CreateUnimartB2CReturnOrder();
+        // CreateFamilyB2CReturnOrder()
+        $Result = $AL->CreateFamilyB2CReturnOrder();
         echo '<pre>' . print_r($Result, true) . '</pre>';
     } catch(Exception $e) {
         echo $e->getMessage();

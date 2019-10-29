@@ -1,8 +1,8 @@
 ﻿<?php
     // 取消訂單(統一超商C2C)
-    require('ECPay.Logistics.Integration.php');
+    require('Ecpay.Logistic.Integration.php');
     try {
-        $AL = new ECPayLogistics();
+        $AL = new EcpayLogistics();
         $AL->HashKey = '5294y06JbISpM5x9';
         $AL->HashIV = 'v77hoKGq4kWxNNIS';
         $AL->Send = array(

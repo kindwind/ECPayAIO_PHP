@@ -1,20 +1,20 @@
 ﻿<?php
     // 一般物流訂單建立
     define('HOME_URL', 'http://www.sample.com.tw/logistics_dev');
-    require('ECPay.Logistics.Integration.php');
+    require('Ecpay.Logistic.Integration.php');
     try {
-        $AL = new ECPayLogistics();
+        $AL = new EcpayLogistics();
         $AL->HashKey = '5294y06JbISpM5x9';
         $AL->HashIV = 'v77hoKGq4kWxNNIS';
         $AL->Send = array(
             'MerchantID' => '2000132',
             'MerchantTradeNo' => 'no' . date('YmdHis'),
             'MerchantTradeDate' => date('Y/m/d H:i:s'),
-			'LogisticsType' => LogisticsType::CVS,
-            'LogisticsSubType' => LogisticsSubType::UNIMART,
+			'LogisticsType' => EcpayLogisticsType::CVS,
+            'LogisticsSubType' => EcpayLogisticsSubType::UNIMART,
             'GoodsAmount' => 1500,
             'CollectionAmount' => 10,
-            'IsCollection' => IsCollection::NO,
+            'IsCollection' => EcpayIsCollection::NO,
             'GoodsName' => '測試商品',
             'SenderName' => '測試寄件者',
             'SenderPhone' => '0226550115',
