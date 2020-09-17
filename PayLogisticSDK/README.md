@@ -18,11 +18,36 @@
 
 * PHP 5.3.0 以上
 
-### 3. 使用教學
+### 3. Sample
+
+* 建立超商取貨物流訂單 : sample_BGCvsCreateShippingOrder
+* 建立宅配物流訂單     : sample_BGHomeCreateShippingOrder
+* 取消訂單(統一超商C2C): sample_CancelUnimartLogisticsOrder
+* 全家逆物流核帳(全家超商B2C) : sample_CheckFamilyB2CLogistics
+* 產生B2C測標資料            : sample_CreateB2CTestData
+* 超商取貨逆物流訂單(全家超商B2C) : sample_CreateFamilyB2CReturnOrder
+* 超商取貨逆物流訂單(萊爾富超商B2C) : sample_CreateHiLifeB2CReturnOrder
+* 建立宅配逆物流訂單   : sample_CreateHomeReturnOrder
+* 超商取貨逆物流訂單(統一超商B2C) : sample_CreateUnimartB2CReturnOrder
+* 建立一般物流訂單     :  sample_CvsCreateShippingOrder
+* 電子地圖 : sample_CvsMap
+* 幕前建立宅配物流訂單 : sample_HomeCreateShippingOrder
+* 全家列印小白單(全家超商C2C) : sample_PrintFamilyC2CBill
+* 萊爾富列印小白單(萊爾富超商C2C) : sample_PrintHiLifeC2CBill
+* 產生托運單(宅配)/一段標(超商取貨) : sample_PrintTradeDoc
+* 列印繳款單(統一超商C2C) : sample_PrintUnimartC2CBill
+* 查詢物流訂單  : sample_QueryLogisticsInfo
+* 廠商修改物流資訊(統一超商B2C) : sample_UpdateUnimartLogisticsInfo
+* 更新門市(統一超商C2C) : sample_UpdateUnimartStore
+* 更新門市通知(統一超商C2C) : simple_ReplyUpdateUnimartStore
+* 物流狀態通知 : simple_ServerReplyLogisticsStatus
+* 逆物流狀態通知 : simple_ServerReplyLogisticsStatusOfReturnOrder
+
+### 4. 使用教學
 
 * 請參考串接文件 https://www.ecpay.com.tw/Service/API_Dwnld
 
-### 4. 聯絡我們
+### 5. 聯絡我們
 
 * 綠界技術服務工程師信箱：techsupport@ecpay.com.tw
 
